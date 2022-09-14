@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather 날씨</title>
+
+  <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+  <div class="weather-wrap">
+
+    <h1>Weather</h1>
+
+    <span class="ment">도시 이름을 영어로 입력해 주세요!</span>
+    
+    <form id="weather-form">
+      <input type="text" name="city" placeholder="City Name"> <br>
+      <button id="submit-btn" type="submit">OK</button>
+    </form>
+
+    <!-- weather :: form 입력 후 -->
+    <div class="weather">
+      <div class="title">Today's Weather</div>
+      <p class="current"></p> 
+      <h2 class="city"></h2>
+      <ul class="temperature">
+        <li class="max"></li>
+        <li class="min"></li>
+        <li class="feel"></li>
+      </ul>
+   </div><!--weather-->
+
+  </div><!--weather-wrap-->
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
